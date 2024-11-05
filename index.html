@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - João da Silva</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+            <li><a href="mailto:joao@exemplo.com">Email</a></li>
+            <li><a href="https://linkedin.com/in/joaodasilva" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção de Capa -->
+    <header id="about" class="header">
+        <div class="profile">
+            <img src="foto-perfil.jpg" alt="Foto de Perfil" class="profile-img">
+            <h1>João da Silva</h1>
+            <p>Desenvolvedor Front-End</p>
+        </div>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/joaodasilva" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/joaodasilva" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="mailto:joao@exemplo.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+    </header>
+
+    <!-- Seção de Objetivo Profissional -->
+    <section id="objective">
+        <h2>Objetivo Profissional</h2>
+        <p>Busco uma posição como Desenvolvedor Front-End, onde posso aplicar minhas habilidades técnicas e criativas na construção de interfaces inovadoras e de alta performance.</p>
+    </section>
+
+    <!-- Seção de Habilidades -->
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML & CSS</h3>
+                <p>Experiência em HTML5, CSS3, SASS, e pré-processadores para criar layouts responsivos.</p>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Domínio de JavaScript para criação de sites interativos e dinâmicos.</p>
+            </div>
+            <div class="skill">
+                <h3>React</h3>
+                <p>Desenvolvimento de interfaces de usuário com React e Redux para gerenciamento de estado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projects">
+        <h2>Projetos</h2>
+        <div class="project" onclick="showProjectDetails('project1')">
+            <h3>Site de E-commerce</h3>
+            <p>Desenvolvimento de uma plataforma de vendas online com React.</p>
+        </div>
+        <div class="project" onclick="showProjectDetails('project2')">
+            <h3>Aplicativo de Tarefas</h3>
+            <p>Aplicativo de gerenciamento de tarefas utilizando React e Firebase.</p>
+        </div>
+
+        <!-- Detalhes dos Projetos -->
+        <div id="project1" class="project-details">
+            <h3>Detalhes do Projeto: E-commerce</h3>
+            <p>O projeto envolveu o desenvolvimento de um site de e-commerce com React, incluindo integração com uma API de pagamento e otimização para dispositivos móveis.</p>
+        </div>
+        <div id="project2" class="project-details">
+            <h3>Detalhes do Projeto: Aplicativo de Tarefas</h3>
+            <p>O aplicativo permite aos usuários gerenciar tarefas, com integração em tempo real através do Firebase.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Você pode entrar em contato comigo por e-mail ou me adicionar no LinkedIn.</p>
+        <button id="downloadCV" onclick="downloadCV()">Baixar Currículo</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
